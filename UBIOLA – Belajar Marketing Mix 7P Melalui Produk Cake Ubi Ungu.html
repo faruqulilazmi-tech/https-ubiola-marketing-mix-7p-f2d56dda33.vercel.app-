@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UBIOLA – Belajar Marketing Mix 7P Melalui Produk Cake Ubi Ungu</title>
+  <meta name="description" content="Media pembelajaran interaktif Marketing Mix 7P (Product, Price, Place, Promotion, People, Process, Physical Evidence) dengan studi kasus UBIOLA, cake ubi ungu tanpa tepung terigu dan bebas pengawet.">
+  <meta name="theme-color" content="#6B3B83">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Ikon SVG yang dipakai ulang di seluruh halaman -->
+  <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-product" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></symbol>
+    <symbol id="i-price" viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+    <symbol id="i-place" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-promotion" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M16.5 9a4 4 0 0 1 0 6"/><path d="M19.5 6a8 8 0 0 1 0 12"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></symbol>
+    <symbol id="i-process" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a3 3 0 0 1 3 3V14"/></symbol>
+    <symbol id="i-evidence" viewBox="0 0 24 24"><path d="M5.5 8h13l-1.2 12.5H6.7L5.5 8z"/><path d="M9 8a3 3 0 0 1 6 0"/><path d="M9.5 14l1.8 1.8 3.4-3.4"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l9.5 17h-19L12 3z"/><path d="M12 10v4"/><path d="M12 17.5v.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 10"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15"/><path d="M5 19l7-7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#beranda" class="brand" aria-label="UBIOLA, kembali ke beranda">
+        <span class="brand__mark" aria-hidden="true">U</span>
+        <span class="brand__text">UBIOLA<small>Marketing Mix 7P</small></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#pengenalan">Pengenalan</a></li>
+        <li><a href="#materi">Materi 7P</a></li>
+        <li><a href="#studi-kasus">Studi Kasus</a></li>
+        <li><a href="#hubungan">Hubungan 7P</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- A. HERO -->
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Media Pembelajaran Interaktif</p>
+          <h1 id="hero-title">Mengenal Marketing Mix 7P Melalui Produk UBIOLA</h1>
+          <p class="hero__lead">Memahami strategi pemasaran dari konsep hingga penerapannya pada bisnis cake olahan ubi ungu.</p>
+          <div class="hero__actions">
+            <a href="#pengenalan" class="btn btn--primary">
+              Mulai Belajar
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a href="#studi-kasus" class="btn btn--ghost">Lihat Studi Kasus</a>
+          </div>
+          <ul class="hero__facts" aria-label="Karakteristik produk UBIOLA">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>Ubi ungu alami</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Tanpa tepung terigu</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Bebas pengawet</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- B. PENGENALAN -->
+    <section class="section" id="pengenalan" aria-labelledby="pengenalan-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Bagian 1</p>
+          <h2 id="pengenalan-title">Apa Itu Marketing Mix 7P?</h2>
+        </div>
+        <div class="intro-text">
+          <p><strong>Marketing Mix (bauran pemasaran)</strong> adalah kumpulan alat pemasaran yang dipadukan untuk memenuhi kebutuhan pasar sasaran.</p>
+          <p>Awalnya terdiri dari <strong>4P</strong> (McCarthy, 1960): Product, Price, Place, dan Promotion. Booms dan Bitner (1981) menambahkan People, Process, dan Physical Evidence sehingga menjadi <strong>7P</strong>.</p>
+        </div>
+
+        <div class="evolution" aria-label="Perkembangan dari 4P menjadi 7P">
+          <div class="evolution__group">
+            <span class="evolution__label">4P – Bauran Klasik</span>
+            <div class="evolution__chips"><span>Product</span><span>Price</span><span>Place</span><span>Promotion</span></div>
+          </div>
+          <span class="evolution__plus" aria-hidden="true">+</span>
+          <div class="evolution__group evolution__group--new">
+            <span class="evolution__label">3P – Pengembangan</span>
+            <div class="evolution__chips"><span>People</span><span>Process</span><span>Physical Evidence</span></div>
+          </div>
+        </div>
+
+        <h3 class="sub-title">Tujuh Elemen Marketing Mix</h3>
+        <p class="hint" id="cardsHint">Pilih salah satu kartu untuk melihat penjelasannya.</p>
+        <div class="p-cards" role="group" aria-describedby="cardsHint">
+          <button class="p-card" data-p="product" aria-pressed="false" aria-controls="pDetail">
+            <span class="p-card__num">01</span>
+            <span class="p-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-product"/></svg></span>
+            <span class="p-card__name">Product</span>
+            <span class="p-card__desc">Barang atau jasa yang ditawarkan untuk memenuhi kebutuhan konsumen.</span>
+          </button>
+          <button class="p-card" data-p="price" aria-pressed="false" aria-controls="pDetail">
+            <span class="p-card__num">02</span>
+            <span class="p-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-price"/></svg></span>
+            <span class="p-card__name">Price</span>
+            <span class="p-card__desc">Nilai uang yang dibayar konsumen untuk memperoleh produk.</span>
+          </button>
+          <button class="p-card" data-p="place" aria-pressed="false" aria-controls="pDetail">
+            <span class="p-card__num">03</span>
+            <span class="p-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-place"/></svg></span>
+            <span class="p-card__name">Place</span>
+            <span class="p-card__desc">Cara dan lokasi produk sampai ke tangan konsumen.</span>
+          </button>
+          <button class="p-card" data-p="promotion" aria-pressed="false" aria-controls="pDetail">
+            <span class="p-card__num">04</span>
+            <span class="p-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-promotion"/></svg></span>
+            <span class="p-card__name">Promotion</span>
+            <span class="p-card__desc">Komunikasi untuk memperkenalkan dan membujuk konsumen.</span>
+          </button>
+          <button class="p-card" data-p="people" aria-pressed="false" aria-controls="pDetail">
+            <span class="p-card__num">05</span>
+            <span class="p-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></span>
+            <span class="p-card__name">People</span>
+            <span class="p-card__desc">Orang-orang yang terlibat dalam produksi dan pelayanan.</span>
+          </button>
+          <button class="p-card" data-p="process" aria-pressed="false" aria-controls="pDetail">
+            <span class="p-card__num">06</span>
+            <span class="p-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-process"/></svg></span>
+            <span class="p-card__name">Process</span>
+            <span class="p-card__desc">Prosedur dan alur kerja dalam menghasilkan serta menyerahkan produk.</span>
+          </button>
+          <button class="p-card" data-p="evidence" aria-pressed="false" aria-controls="pDetail">
+            <span class="p-card__num">07</span>
+            <span class="p-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-evidence"/></svg></span>
+            <span class="p-card__name">Physical Evidence</span>
+            <span class="p-card__desc">Bukti fisik yang membentuk persepsi dan kepercayaan konsumen.</span>
+          </button>
+        </div>
+
+        <div class="p-detail" id="pDetail" aria-live="polite">
+          <div class="p-detail__empty">
+            <svg class="icon" aria-hidden="true"><use href="#i-target"/></svg>
+            <p>Penjelasan elemen akan muncul di sini setelah Anda memilih salah satu kartu di atas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. MATERI LENGKAP -->
+    <section class="section section--cream" id="materi" aria-labelledby="materi-title">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <p class="eyebrow">Bagian 2</p>
+          <h2 id="materi-title">Materi Marketing Mix 7P</h2>
+          <p class="section__lead">Ringkasan setiap elemen beserta penerapannya pada UBIOLA. Buka satu elemen untuk membaca.</p>
+        </div>
+
+        <div class="accordion" id="materiAccordion">
+
+          <!-- PRODUCT -->
+          <article class="acc" id="materi-product">
+            <h3 class="acc__heading">
+              <button class="acc__trigger" id="acc-btn-product" aria-expanded="false" aria-controls="acc-product">
+                <span class="acc__icon"><svg class="icon" aria-hidden="true"><use href="#i-product"/></svg></span>
+                <span class="acc__title"><span class="acc__num">01</span>Product<small>Produk dan nilai yang ditawarkan</small></span>
+                <svg class="icon acc__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-product" role="region" aria-labelledby="acc-btn-product" hidden>
+              <div class="mat">
+                <h4>1. Pengertian</h4>
+                <p>Segala sesuatu yang ditawarkan ke pasar untuk memenuhi kebutuhan konsumen, termasuk manfaat, merek, dan kemasannya.</p>
+                <h4>2. Tujuan</h4>
+                <p>Menghadirkan produk yang dibutuhkan pasar, unggul dari pesaing, dan memuaskan pelanggan.</p>
+                <h4>3. Fungsi</h4>
+                <p>Menjadi dasar keputusan harga, distribusi, dan promosi, sekaligus alat diferensiasi.</p>
+                <h4>4. Aspek Penting</h4>
+                <p>Kualitas, fitur, manfaat, nilai produk, desain, merek, kemasan, diferensiasi, dan kepuasan konsumen.</p>
+                <h4>5. Strategi</h4>
+                <p>Tetapkan keunggulan utama, gunakan resep baku, dan kumpulkan masukan pelanggan secara rutin.</p>
+                <div class="case-note">
+                  <h4>6. Penerapan pada UBIOLA</h4>
+                  <p>Cake dari <strong>ubi ungu alami</strong>, <strong>tanpa tepung terigu</strong>, <strong>bebas pengawet</strong>, bergizi, serta bertekstur lembut dan manis. Inilah pembeda UBIOLA dari cake berbahan terigu.</p>
+                </div>
+                <h4>7. Kesimpulan</h4>
+                <p class="conclusion">Keunggulan bahan alami UBIOLA hanya bernilai jika kualitasnya konsisten.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRICE -->
+          <article class="acc" id="materi-price">
+            <h3 class="acc__heading">
+              <button class="acc__trigger" id="acc-btn-price" aria-expanded="false" aria-controls="acc-price">
+                <span class="acc__icon"><svg class="icon" aria-hidden="true"><use href="#i-price"/></svg></span>
+                <span class="acc__title"><span class="acc__num">02</span>Price<small>Penetapan harga dan persepsi nilai</small></span>
+                <svg class="icon acc__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-price" role="region" aria-labelledby="acc-btn-price" hidden>
+              <div class="mat">
+                <h4>1. Pengertian</h4>
+                <p>Jumlah uang yang dibayar konsumen untuk memperoleh manfaat produk; satu-satunya elemen yang menghasilkan pendapatan.</p>
+                <h4>2. Tujuan</h4>
+                <p>Menutup biaya, menghasilkan laba wajar, dan tetap bersaing.</p>
+                <h4>3. Fungsi</h4>
+                <p>Sinyal kualitas bagi konsumen, alat bersaing, dan penentu besarnya keuntungan.</p>
+                <h4>4. Aspek Penting</h4>
+                <p>HPP, biaya produksi, margin keuntungan, harga kompetitif, strategi diskon, dan persepsi harga.</p>
+                <h4>5. Strategi</h4>
+                <p>Hitung HPP, tambahkan margin, lalu sesuaikan dengan harga pesaing dan nilai yang dirasakan konsumen.</p>
+                <div class="case-note">
+                  <h4>6. Penerapan pada UBIOLA</h4>
+                  <p>Biaya bahan baku, tenaga kerja, kemasan, dan listrik Rp900.000 untuk 20 loyang menghasilkan <strong>HPP Rp45.000</strong>. Dengan margin 40% dan pertimbangan pasar, harga jual menjadi sekitar <strong>Rp65.000 per loyang</strong>.</p>
+                </div>
+                <h4>7. Kesimpulan</h4>
+                <p class="conclusion">Harga yang tepat berangkat dari HPP yang akurat dan persepsi nilai konsumen.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PLACE -->
+          <article class="acc" id="materi-place">
+            <h3 class="acc__heading">
+              <button class="acc__trigger" id="acc-btn-place" aria-expanded="false" aria-controls="acc-place">
+                <span class="acc__icon"><svg class="icon" aria-hidden="true"><use href="#i-place"/></svg></span>
+                <span class="acc__title"><span class="acc__num">03</span>Place<small>Distribusi dan saluran penjualan</small></span>
+                <svg class="icon acc__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-place" role="region" aria-labelledby="acc-btn-place" hidden>
+              <div class="mat">
+                <h4>1. Pengertian</h4>
+                <p>Kegiatan yang membuat produk tersedia bagi konsumen: lokasi, distribusi, penyimpanan, dan pengiriman.</p>
+                <h4>2. Tujuan</h4>
+                <p>Produk tersedia pada waktu, tempat, dan kondisi yang tepat.</p>
+                <h4>3. Fungsi</h4>
+                <p>Memperluas jangkauan pasar dan memudahkan konsumen membeli.</p>
+                <h4>4. Aspek Penting</h4>
+                <p>Lokasi, saluran pemasaran, distribusi, jangkauan pasar, penyimpanan, dan pengiriman.</p>
+                <h4>5. Strategi</h4>
+                <p>Gabungkan saluran luring dan daring, serta batasi radius pengiriman sesuai daya tahan produk.</p>
+                <div class="case-note">
+                  <h4>6. Penerapan pada UBIOLA</h4>
+                  <p>Dijual langsung dan di bazar, dipesan lewat <strong>WhatsApp</strong> dan <strong>Instagram</strong>, menggunakan <strong>sistem pre-order</strong> agar selalu segar, lalu dikirim kurir lokal di hari yang sama.</p>
+                </div>
+                <h4>7. Kesimpulan</h4>
+                <p class="conclusion">Pre-order dan pengiriman cepat menjaga kesegaran cake tanpa pengawet.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROMOTION -->
+          <article class="acc" id="materi-promotion">
+            <h3 class="acc__heading">
+              <button class="acc__trigger" id="acc-btn-promotion" aria-expanded="false" aria-controls="acc-promotion">
+                <span class="acc__icon"><svg class="icon" aria-hidden="true"><use href="#i-promotion"/></svg></span>
+                <span class="acc__title"><span class="acc__num">04</span>Promotion<small>Komunikasi dan brand awareness</small></span>
+                <svg class="icon acc__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-promotion" role="region" aria-labelledby="acc-btn-promotion" hidden>
+              <div class="mat">
+                <h4>1. Pengertian</h4>
+                <p>Komunikasi untuk menginformasikan, membujuk, dan mengingatkan konsumen tentang produk.</p>
+                <h4>2. Tujuan</h4>
+                <p>Membangun kesadaran merek dan mendorong keputusan membeli.</p>
+                <h4>3. Fungsi</h4>
+                <p>Menyampaikan keunggulan produk dan membedakannya dari pesaing.</p>
+                <h4>4. Aspek Penting</h4>
+                <p>Periklanan, promosi penjualan, pemasaran digital, media sosial, testimoni, pemasaran langsung, dan brand awareness.</p>
+                <h4>5. Strategi</h4>
+                <p>Tentukan pesan utama, pilih media yang sesuai target, dan manfaatkan bukti dari pelanggan.</p>
+                <div class="case-note">
+                  <h4>6. Penerapan pada UBIOLA</h4>
+                  <p>Konten Instagram menonjolkan <strong>keunikan ubi ungu alami tanpa terigu</strong>, tester gratis di bazar, promo pre-order, dan repost testimoni pelanggan.</p>
+                </div>
+                <h4>7. Kesimpulan</h4>
+                <p class="conclusion">Promosi efektif menonjolkan keunikan yang benar-benar dimiliki produk.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PEOPLE -->
+          <article class="acc" id="materi-people">
+            <h3 class="acc__heading">
+              <button class="acc__trigger" id="acc-btn-people" aria-expanded="false" aria-controls="acc-people">
+                <span class="acc__icon"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></span>
+                <span class="acc__title"><span class="acc__num">05</span>People<small>Sumber daya manusia dan pelayanan</small></span>
+                <svg class="icon acc__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-people" role="region" aria-labelledby="acc-btn-people" hidden>
+              <div class="mat">
+                <h4>1. Pengertian</h4>
+                <p>Semua orang yang terlibat dalam produksi dan pelayanan kepada konsumen.</p>
+                <h4>2. Tujuan</h4>
+                <p>Menjamin pekerjaan berjalan baik dan pelanggan dilayani dengan ramah.</p>
+                <h4>3. Fungsi</h4>
+                <p>Menentukan kualitas produk dan pengalaman pelanggan.</p>
+                <h4>4. Aspek Penting</h4>
+                <p>Pembagian tugas, keterampilan, pelayanan pelanggan, komunikasi, pelatihan, dan evaluasi kinerja.</p>
+                <h4>5. Strategi</h4>
+                <p>Tetapkan peran yang jelas, latih SOP, dan lakukan evaluasi rutin.</p>
+                <div class="case-note">
+                  <h4>6. Penerapan pada UBIOLA</h4>
+                  <p>Tim dibagi menjadi <strong>produksi</strong>, <strong>pengemasan</strong>, <strong>pemasaran</strong>, dan <strong>admin</strong> yang melayani pesanan WhatsApp dengan cepat dan sopan.</p>
+                </div>
+                <h4>7. Kesimpulan</h4>
+                <p class="conclusion">Tim yang terampil dan terkoordinasi menjaga kualitas dan pelayanan.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROCESS -->
+          <article class="acc" id="materi-process">
+            <h3 class="acc__heading">
+              <button class="acc__trigger" id="acc-btn-process" aria-expanded="false" aria-controls="acc-process">
+                <span class="acc__icon"><svg class="icon" aria-hidden="true"><use href="#i-process"/></svg></span>
+                <span class="acc__title"><span class="acc__num">06</span>Process<small>Alur kerja dan standar operasional</small></span>
+                <svg class="icon acc__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-process" role="region" aria-labelledby="acc-btn-process" hidden>
+              <div class="mat">
+                <h4>1. Pengertian</h4>
+                <p>Prosedur dan alur kerja untuk menghasilkan serta menyerahkan produk kepada konsumen.</p>
+                <h4>2. Tujuan</h4>
+                <p>Kualitas konsisten, pekerjaan efisien, dan pesanan tepat waktu.</p>
+                <h4>3. Fungsi</h4>
+                <p>Mengurangi kesalahan dan memperlancar operasional.</p>
+                <h4>4. Aspek Penting</h4>
+                <p>SOP, alur produksi, pengelolaan pesanan, pengendalian kualitas, efisiensi, stok bahan baku, dan pengiriman.</p>
+                <h4>5. Strategi</h4>
+                <p>Tulis SOP sederhana, catat pesanan secara rapi, dan periksa kualitas sebelum dikirim.</p>
+                <div class="case-note">
+                  <h4>6. Penerapan pada UBIOLA</h4>
+                  <p>Pesanan dicatat &rarr; ubi dikukus dan dihaluskan &rarr; adonan dibuat sesuai resep &rarr; dipanggang &rarr; diperiksa dan dikemas &rarr; dikirim ke konsumen.</p>
+                </div>
+                <h4>7. Kesimpulan</h4>
+                <p class="conclusion">Proses yang terstandar membuat setiap cake memiliki kualitas yang sama.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- PHYSICAL EVIDENCE -->
+          <article class="acc" id="materi-evidence">
+            <h3 class="acc__heading">
+              <button class="acc__trigger" id="acc-btn-evidence" aria-expanded="false" aria-controls="acc-evidence">
+                <span class="acc__icon"><svg class="icon" aria-hidden="true"><use href="#i-evidence"/></svg></span>
+                <span class="acc__title"><span class="acc__num">07</span>Physical Evidence<small>Bukti fisik dan identitas merek</small></span>
+                <svg class="icon acc__chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-evidence" role="region" aria-labelledby="acc-btn-evidence" hidden>
+              <div class="mat">
+                <h4>1. Pengertian</h4>
+                <p>Bukti nyata yang dilihat dan dirasakan konsumen untuk menilai kualitas usaha.</p>
+                <h4>2. Tujuan</h4>
+                <p>Membangun kepercayaan dan citra profesional.</p>
+                <h4>3. Fungsi</h4>
+                <p>Membuat kualitas produk terlihat dan mudah dikenali.</p>
+                <h4>4. Aspek Penting</h4>
+                <p>Kemasan, logo, identitas merek, label, tampilan produk, kebersihan, bukti transaksi, dan media sosial.</p>
+                <h4>5. Strategi</h4>
+                <p>Gunakan identitas visual yang konsisten dan label yang informatif.</p>
+                <div class="case-note">
+                  <h4>6. Penerapan pada UBIOLA</h4>
+                  <p>Kotak kraft krem dengan logo ungu, label komposisi bertuliskan <strong>&ldquo;Tanpa Terigu &amp; Tanpa Pengawet&rdquo;</strong>, tanggal produksi, nota digital, dan feed Instagram yang rapi.</p>
+                </div>
+                <h4>7. Kesimpulan</h4>
+                <p class="conclusion">Tampilan yang konsisten membangun kepercayaan sejak pandangan pertama.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. STUDI KASUS -->
+    <section class="section" id="studi-kasus" aria-labelledby="kasus-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Bagian 3 · Studi Kasus</p>
+          <h2 id="kasus-title">Tantangan Operasional: Pesanan Meningkat Dua Kali Lipat dalam Satu Minggu</h2>
+        </div>
+
+        <div class="scenario">
+          <div class="scenario__text">
+            <h3>Skenario</h3>
+            <p>Setelah sebuah video ulasan UBIOLA ramai dibagikan di media sosial, pesanan yang biasanya sekitar <strong>50 loyang per minggu</strong> melonjak menjadi <strong>100 loyang</strong> dalam satu minggu. Kenaikan ini adalah peluang, tetapi kapasitas dapur, jumlah tim, dan sistem pencatatan masih dirancang untuk volume lama.</p>
+            <p>Jika tidak dikelola, bisnis berisiko mengecewakan pelanggan karena kualitas menurun atau pesanan terlambat. Analisis difokuskan pada tiga elemen yang paling terdampak: <strong>Product, People,</strong> dan <strong>Process</strong>.</p>
+            <dl class="stat">
+              <div><dt>Pesanan normal</dt><dd>50<span>/minggu</span></dd></div>
+              <div><dt>Pesanan saat lonjakan</dt><dd>100<span>/minggu</span></dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <h3 class="sub-title">Alur Penyelesaian Masalah</h3>
+        <ol class="flow" aria-label="Diagram alur dari pemicu hingga hasil">
+          <li class="flow__step flow__step--trigger"><span class="flow__tag">Pemicu</span><strong>Pesanan naik 2×</strong><span>Kapasitas lama tidak mencukupi</span></li>
+          <li class="flow__step flow__step--problem"><span class="flow__tag">Masalah</span><strong>Kualitas, beban kerja, antrean</strong><span>Product · People · Process</span></li>
+          <li class="flow__step flow__step--solution"><span class="flow__tag">Solusi</span><strong>Standar, pembagian tugas, jadwal</strong><span>SOP, batch, pencatatan</span></li>
+          <li class="flow__step flow__step--result"><span class="flow__tag">Hasil</span><strong>Mutu terjaga, pesanan tepat waktu</strong><span>Pelanggan puas dan kembali</span></li>
+        </ol>
+
+        <h3 class="sub-title">Analisis Tiga Elemen</h3>
+        <p class="hint">Pilih elemen untuk melihat masalah, solusi, dan hasil yang diharapkan.</p>
+        <div class="case-tabs" role="tablist" aria-label="Elemen studi kasus">
+          <button class="case-tab" role="tab" id="tab-c-product" aria-controls="panel-c-product" aria-selected="true">
+            <span class="case-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-product"/></svg></span>
+            <span><strong>Product</strong><small>Menjaga Kualitas</small></span>
+          </button>
+          <button class="case-tab" role="tab" id="tab-c-people" aria-controls="panel-c-people" aria-selected="false" tabindex="-1">
+            <span class="case-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></span>
+            <span><strong>People</strong><small>Mengelola SDM</small></span>
+          </button>
+          <button class="case-tab" role="tab" id="tab-c-process" aria-controls="panel-c-process" aria-selected="false" tabindex="-1">
+            <span class="case-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-process"/></svg></span>
+            <span><strong>Process</strong><small>Meningkatkan Efisiensi</small></span>
+          </button>
+        </div>
+
+        <div class="case-panel" role="tabpanel" id="panel-c-product" aria-labelledby="tab-c-product" tabindex="0">
+          <h4 class="case-panel__title">PRODUCT – Menjaga Kualitas</h4>
+          <div class="ps-grid">
+            <div class="ps ps--problem">
+              <h5><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Masalah</h5>
+              <ul>
+                <li>Risiko kualitas produk tidak konsisten antar-batch.</li>
+                <li>Tekstur dan rasa cake berubah akibat produksi terburu-buru, misalnya ubi kurang halus atau waktu panggang dipersingkat.</li>
+                <li>Ketersediaan ubi ungu segar terbatas sehingga kualitas bahan beragam.</li>
+                <li>Karakteristik khas (lembut, manis alami, tanpa pengawet) sulit dipertahankan.</li>
+              </ul>
+            </div>
+            <div class="ps ps--solution">
+              <h5><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Solusi</h5>
+              <ul>
+                <li><strong>Standarisasi resep dan takaran</strong> dengan timbangan digital dan kartu resep tertulis.</li>
+                <li><strong>Pemeriksaan kualitas setiap batch</strong> (tekstur, warna, rasa) sebelum dikemas.</li>
+                <li><strong>Pengendalian bahan baku</strong>: kerja sama dengan pemasok tetap dan standar ubi yang diterima.</li>
+                <li><strong>Pengaturan kapasitas produksi</strong>: menetapkan batas maksimal pesanan per hari.</li>
+                <li><strong>Pemeriksaan kemasan dan produk akhir</strong> sebelum diserahkan ke kurir.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="ps-result"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg><span><strong>Hasil yang diharapkan:</strong> setiap cake tetap lembut dan manis alami meski volume dua kali lipat, sehingga reputasi UBIOLA terjaga.</span></p>
+        </div>
+
+        <div class="case-panel" role="tabpanel" id="panel-c-people" aria-labelledby="tab-c-people" tabindex="0" hidden>
+          <h4 class="case-panel__title">PEOPLE – Mengelola Sumber Daya Manusia</h4>
+          <div class="ps-grid">
+            <div class="ps ps--problem">
+              <h5><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Masalah</h5>
+              <ul>
+                <li>Beban kerja tim meningkat tajam.</li>
+                <li>Pembagian tugas tidak teratur sehingga pekerjaan tumpang tindih.</li>
+                <li>Risiko kesalahan dan kelelahan karena jam kerja memanjang.</li>
+                <li>Pelayanan pelanggan melambat; pesan WhatsApp terlambat dibalas.</li>
+              </ul>
+            </div>
+            <div class="ps ps--solution">
+              <h5><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Solusi</h5>
+              <ul>
+                <li><strong>Pembagian tugas yang jelas</strong> antara produksi, pengemasan, pemasaran, dan admin.</li>
+                <li><strong>Penyesuaian tenaga kerja</strong>, misalnya menambah pekerja paruh waktu untuk pengemasan.</li>
+                <li><strong>Pelatihan SOP</strong> singkat bagi anggota baru agar standar tetap sama.</li>
+                <li><strong>Pengaturan jadwal kerja</strong> bergilir dengan waktu istirahat yang cukup.</li>
+                <li><strong>Evaluasi kinerja dan komunikasi tim</strong> melalui briefing harian singkat.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="ps-result"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg><span><strong>Hasil yang diharapkan:</strong> tim bekerja terkoordinasi tanpa kelelahan berlebih, kesalahan berkurang, dan pelanggan tetap dilayani dengan cepat dan ramah.</span></p>
+        </div>
+
+        <div class="case-panel" role="tabpanel" id="panel-c-process" aria-labelledby="tab-c-process" tabindex="0" hidden>
+          <h4 class="case-panel__title">PROCESS – Meningkatkan Efisiensi</h4>
+          <div class="ps-grid">
+            <div class="ps ps--problem">
+              <h5><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>Masalah</h5>
+              <ul>
+                <li>Jadwal produksi menjadi lebih padat.</li>
+                <li>Pesanan menumpuk dan sebagian terlewat.</li>
+                <li>Pengemasan dan pengiriman terlambat.</li>
+                <li>Pengelolaan stok bahan baku menjadi sulit.</li>
+              </ul>
+            </div>
+            <div class="ps ps--solution">
+              <h5><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Solusi</h5>
+              <ul>
+                <li><strong>Penjadwalan produksi</strong> harian berdasarkan tanggal kirim.</li>
+                <li><strong>Sistem pencatatan pesanan</strong> terpusat (misalnya spreadsheet) dengan status pesanan.</li>
+                <li><strong>SOP penerimaan pesanan sampai pengiriman</strong>, termasuk batas waktu pre-order.</li>
+                <li><strong>Produksi berdasarkan batch</strong> agar kualitas dan waktu terukur.</li>
+                <li><strong>Pemantauan stok bahan baku</strong> dengan batas minimum persediaan.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="ps-result"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg><span><strong>Hasil yang diharapkan:</strong> pesanan tercatat rapi, produksi berjalan teratur, dan cake dikirim tepat waktu tanpa kehabisan bahan.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. HUBUNGAN 7P -->
+    <section class="section section--cream" id="hubungan" aria-labelledby="hubungan-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Bagian 4</p>
+          <h2 id="hubungan-title">Hubungan Antarelemen Marketing Mix 7P</h2>
+          <p class="section__lead">Ketujuh elemen tidak berdiri sendiri. Keputusan pada satu elemen selalu memengaruhi elemen lainnya, dan semuanya bertemu pada satu tujuan: kepuasan pelanggan dan keberhasilan UBIOLA.</p>
+        </div>
+
+        <div class="relation">
+          <figure class="relation__figure">
+            <svg viewBox="0 0 400 400" role="img" aria-labelledby="relTitle relDesc">
+              <title id="relTitle">Diagram hubungan tujuh elemen Marketing Mix</title>
+              <desc id="relDesc">Tujuh elemen tersusun melingkar dan saling terhubung satu sama lain, dengan UBIOLA di bagian tengah sebagai pusat.</desc>
+              <g class="rel-mesh">
+                <path d="M200 50 L265 335 L53.8 233.4 L317.3 106.5 L134.9 335.1 L82.7 106.5 L346.2 233.4 Z"/>
+              </g>
+              <g class="rel-ring">
+                <path d="M200 50 L317.3 106.5 L346.2 233.4 L265.1 335.1 L134.9 335.1 L53.8 233.4 L82.7 106.5 Z"/>
+              </g>
+              <g class="rel-spokes">
+                <line x1="200" y1="200" x2="200" y2="50"/><line x1="200" y1="200" x2="317.3" y2="106.5"/><line x1="200" y1="200" x2="346.2" y2="233.4"/><line x1="200" y1="200" x2="265.1" y2="335.1"/><line x1="200" y1="200" x2="134.9" y2="335.1"/><line x1="200" y1="200" x2="53.8" y2="233.4"/><line x1="200" y1="200" x2="82.7" y2="106.5"/>
+              </g>
+              <circle class="rel-core" cx="200" cy="200" r="52"/>
+              <text class="rel-core-text" x="200" y="196">UBIOLA</text>
+              <text class="rel-core-sub" x="200" y="214">Kepuasan pelanggan</text>
+              <g class="rel-nodes">
+                <g><circle cx="200" cy="50" r="30"/><text x="200" y="54">Product</text></g>
+                <g><circle cx="317.3" cy="106.5" r="30"/><text x="317.3" y="110.5">Price</text></g>
+                <g><circle cx="346.2" cy="233.4" r="30"/><text x="346.2" y="237.4">Place</text></g>
+                <g><circle cx="265.1" cy="335.1" r="30"/><text x="265.1" y="339.1">Promotion</text></g>
+                <g><circle cx="134.9" cy="335.1" r="30"/><text x="134.9" y="339.1">People</text></g>
+                <g><circle cx="53.8" cy="233.4" r="30"/><text x="53.8" y="237.4">Process</text></g>
+                <g><circle cx="82.7" cy="106.5" r="30"/><text x="82.7" y="104">Physical</text><text x="82.7" y="116">Evidence</text></g>
+              </g>
+            </svg>
+          </figure>
+
+          <div class="relation__list">
+            <h3>Contoh Keterkaitan pada UBIOLA</h3>
+            <ul>
+              <li><strong>Product → Price</strong> Bahan ubi ungu alami tanpa terigu memengaruhi HPP dan membenarkan harga yang sedikit lebih tinggi.</li>
+              <li><strong>Product → Promotion</strong> Keunikan bahan menjadi pesan utama dalam konten promosi.</li>
+              <li><strong>Product → Place</strong> Karena bebas pengawet, UBIOLA memerlukan sistem pre-order dan pengiriman cepat.</li>
+              <li><strong>People ↔ Process</strong> SOP hanya berjalan bila tim terlatih; tim bekerja efektif bila proses jelas.</li>
+              <li><strong>Process → Product</strong> Alur produksi yang terstandar menjaga konsistensi rasa dan tekstur.</li>
+              <li><strong>Physical Evidence → Promotion</strong> Kemasan dan feed yang rapi memperkuat kepercayaan dan citra merek.</li>
+              <li><strong>Price ↔ Physical Evidence</strong> Kemasan yang baik meningkatkan persepsi nilai sehingga harga terasa sepadan.</li>
+            </ul>
+            <p class="conclusion">Keberhasilan UBIOLA bukan hasil satu elemen terbaik, melainkan keselarasan ketujuh elemen yang saling menguatkan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- G. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__title">UBIOLA – Belajar Marketing Mix 7P</p>
+        <p class="footer__desc">Website ini merupakan media pembelajaran mengenai strategi pemasaran Marketing Mix 7P dan penerapannya dalam bisnis UBIOLA, cake berbahan dasar ubi ungu alami.</p>
+      </div>
+      <nav aria-label="Navigasi footer">
+        <ul class="footer__links">
+          <li><a href="#pengenalan">Pengenalan</a></li>
+          <li><a href="#materi">Materi 7P</a></li>
+          <li><a href="#studi-kasus">Studi Kasus</a></li>
+          <li><a href="#hubungan">Hubungan 7P</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas halaman" hidden>
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
